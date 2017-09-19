@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Любовь Темнова](https://up.htmlacademy.ru/adaptive/12/user/439255).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Пушкарев](https://up.htmlacademy.ru/htmlcss/18/user/87167).
 
 ---
 
