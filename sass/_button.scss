@@ -1,0 +1,13 @@
+.button {
+  padding: 14px;
+  border: 2px solid $text-color;
+  font: inherit;
+  text-transform: uppercase;
+  background: none;
+
+  &--green {
+    color: #ffffff;
+    background-color: $color;
+    border-color: $color;
+  }
+}

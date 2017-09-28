@@ -1,0 +1,50 @@
+.contacts {
+  padding-bottom: 39px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $text-color;
+
+  &__title {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  &__info {
+    display: flex;
+    padding-bottom: 32px;
+  }
+
+  &__label {
+    width: 30%;
+  }
+
+  &__value {
+    width: 70%;
+    font-style: normal;
+  }
+
+  &__map-link {
+    display: inline-block;
+    margin: 4px -31px 39px -31px;
+    vertical-align: top;
+  }
+
+  &__map-image {
+    vertical-align: top;
+  }
+
+  &__btn {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $text-color;
+    border-color: $text-color;
+  }
+}

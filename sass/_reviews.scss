@@ -1,0 +1,14 @@
+.reviews {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}

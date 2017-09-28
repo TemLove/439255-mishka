@@ -1,0 +1,21 @@
+.features {
+  margin-top: 28px;
+  margin-bottom: 30px;
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-basis: 123px;
+    padding-top: 65px;
+  }
+
+}
