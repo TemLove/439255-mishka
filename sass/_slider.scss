@@ -1,5 +1,4 @@
 .slider {
-
   &__slide {
     display: none;
   }
@@ -17,15 +16,15 @@
 
     &--back {
       .slider__control {
-        left: 0px;
-        background-image: url(../img/icon-left-arrow.svg);
+        left: 0;
+        background-image: url("../img/icon-left-arrow.svg");
       }
     }
 
     &--forward {
       .slider__control {
-        right: 0px;
-        background-image: url(../img/icon-right-arrow.svg);
+        right: 0;
+        background-image: url("../img/icon-right-arrow.svg");
       }
     }
   }
