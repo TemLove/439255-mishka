@@ -1,0 +1,8 @@
+.image-link {
+  display: inline-block;
+  vertical-align: baseline;
+
+  &__img {
+    vertical-align: top;
+  }
+}
