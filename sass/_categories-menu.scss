@@ -1,0 +1,17 @@
+.categories-menu {
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+
+  &__item {
+    padding: 25px 150px 30px 30px;
+
+    &--interior {
+      background-color: $color;
+    }
+
+    &--toys {
+      background-color: #56c3b2;
+    }
+  }
+}

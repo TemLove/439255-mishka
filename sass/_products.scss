@@ -1,0 +1,11 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &__product {
+    margin: 15px;
+  }
+}
