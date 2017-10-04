@@ -1,0 +1,26 @@
+.products-menu {
+  @media (min-width: $screen-md) {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    font-size: 15px;
+  }
+
+  @media (min-width: $screen-lg) {
+    position: static;
+    font-size: 17px;
+  }
+}
+
+.products-menu__item {
+  @media (min-width: $screen-md) {
+    width: 50%;
+  }
+}
+
+.products-menu__link {
+  @media (min-width: $screen-md) and (max-width: $screen-lg) {
+    padding: 0;
+    padding-top: 16px;
+  }
+}

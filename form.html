@@ -2,48 +2,77 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page page--form">
-    <header class="page__header main-header">
+    <header class="page__header main-header outline-1">
       <div class="page__container">
         <nav class="main-header__nav main-nav">
-          <ul class="main-nav__list list-reset">
-            <li class="page__menu-item main-header__logo">
-              <a class="image-link" href="index.html">
-                <img class="image-link__img" src="img/logo-mobile.svg" alt='Магазин вязаных вещей "Мишка".' width="86" height="36">
-              </a>
-              <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
-                <span class="visually-hidden">
-                  Открыть меню
-                </span>
-              </button>
-            </li>
-            <li class="page__menu-item main-nav__item">
-              <a class="main-nav__link link-reset" href="catalog.html">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="page__menu-item main-nav__item">
-              <a class="main-nav__link link-reset" href="form.html">
-                Вязание на заказ
+          <div class="main-header__logo main-nav__logo outline-3">
+            <a class="main-nav__link main-nav__link--logo image-link" href="index.html">
+              <img class="image-link__img image-link__img--inline" src="img/logo-mobile.svg" alt='Магазин вязаных вещей "Мишка".' width="86" height="36">
+            </a>
+            <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
+              <span class="visually-hidden">
+                Открыть меню
+              </span>
+            </button>
+          </div>
+          <ul class="main-header__list main-nav__products products-menu list-reset outline-3">
+            <li class="main-nav__item products-menu__item products-menu__catalog">
+              <a class="main-nav__link products-menu__link link-reset" href="catalog.html">
+                <div class="main-nav__wrapper">
+                  Каталог товаров
+                </div>
               </a>
             </li>
-            <li class="page__menu-item main-nav__item">
-              <a class="main-nav__link link-reset" href="search.html">
-                <svg class="main-nav__icon main-nav__icon--search" width="17.6" height="17.6">
-                  <use xlink:href='#search' />
-                </svg>
-                Поиск по сайту
+            <li class="main-nav__item products-menu__item products-menu__form">
+              <a class="main-nav__link products-menu__link link-reset" href="form.html">
+                <div class="main-nav__wrapper">
+                  Вязание на заказ
+                </div>
               </a>
             </li>
-            <li class="page__menu-item main-nav__item">
-              <a class="main-nav__link link-reset" href="cart.html">
-                <svg class="main-nav__icon main-nav__icon--cart" width="20.294" height="18.849">
-                  <use xlink:href='#cart' />
-                </svg>
-                Корзина: пока пуста
+          </ul>
+          <ul class="main-header__list main-nav__user-menu user-menu list-reset outline-3">
+            <li class="main-nav__item user-menu__item user-menu__search">
+              <a class="main-nav__link main-nav__link--no-text user-menu__link link-reset" href="search.html">
+                <div class="main-nav__wrapper">
+                  <svg class="main-nav__icon" width="17.6" height="17.6">
+                    <use xlink:href='#search' />
+                  </svg>
+                  Поиск по сайту
+                </div>
+              </a>
+            </li>
+            <li class="main-nav__item user-menu__item user-menu__cart">
+              <a class="main-nav__link user-menu__link link-reset" href="cart.html">
+                <div class="main-nav__wrapper">
+                  <svg class="main-nav__icon" width="20.294" height="19">
+                    <use xlink:href='#cart' />
+                  </svg>
+                  Корзина: пока пуста
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-header__list main-nav__offers offers-menu list-reset outline-3">
+            <li class="main-nav__item main-nav__item--lg offers-menu__item">
+              <a class="main-nav__link offers-menu__link link-reset" href="newcomes.html">
+                Новые поступления
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--lg offers-menu__item">
+              <a class="main-nav__link offers-menu__link link-reset" href="sales.html">
+                Распродажа
+              </a>
+            </li>
+            <li class="main-nav__item offers-menu__item">
+              <a class="main-nav__link main-nav__link--pale offers-menu__link link-reset" href="delivery.html">
+                Бесплатная доставка по России
               </a>
             </li>
           </ul>
@@ -51,12 +80,12 @@
       </div>
     </header>
     <main class="page__main main">
-      <header class="main__header">
+      <header class="main__header  outline-1">
         <div class="page__container">
           <h1 class="main__title main__title--inner">Вязание на заказ</h1>
         </div>
       </header>
-      <form class="ordering-form" method="get" action="https://echo.htmlacademy.ru">
+      <form class="ordering-form outline-1" method="get" action="https://echo.htmlacademy.ru">
         <div class="page__container">
           <div class="ordering-form__text">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -145,7 +174,7 @@
             <label class="visually-hidden" for="user-wishes">
               Дополнительная информация
             </label>
-            <textarea class="ordering-form__input ordering-form__input--textarea" name="user-wishes" id="user-wishes" placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="6"></textarea>
+            <textarea class="ordering-form__input ordering-form__input--textarea" name="user-wishes" id="user-wishes" placeholder="Опишите все ваши пожелания&nbsp;к&nbsp;заказу" cols="30" rows="6"></textarea>
           </fieldset>
           <p class="ordering-form__comment">*Поля обязательны для заполнения</p>
           <button class="ordering-form__button button" type="submit">
@@ -154,7 +183,7 @@
         </div>
       </form>
     </main>
-    <footer class="page__footer main-footer">
+    <footer class="page__footer main-footer outline-1">
       <div class="page__container">
         <ul class="main-footer__socials socials list-reset">
           <li class="socials__link">

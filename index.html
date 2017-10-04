@@ -2,48 +2,77 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page page--index">
     <header class="page__header main-header">
-      <div class="page__container">
+      <div class="page__container page__container--menu">
         <nav class="main-header__nav main-nav">
-          <ul class="main-nav__list list-reset">
-            <li class="page__menu-item main-header__logo">
-              <a class="image-link">
-                <img class="image-link__img" src="img/logo-mobile.svg" alt='Магазин вязаных вещей "Мишка".' width="86" height="36">
-              </a>
-              <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
-                <span class="visually-hidden">
-                  Открыть меню
-                </span>
-              </button>
-            </li>
-            <li class="page__menu-item main-nav__item">
-              <a class="main-nav__link link-reset" href="catalog.html">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="page__menu-item main-nav__item">
-              <a class="main-nav__link link-reset" href="form.html">
-                Вязание на заказ
+          <div class="main-header__logo main-nav__logo outline-3">
+            <a class="main-nav__link main-nav__link--logo image-link">
+              <img class="image-link__img image-link__img--inline" src="img/logo-mobile.svg" alt='Магазин вязаных вещей "Мишка".' width="86" height="36">
+            </a>
+            <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
+              <span class="visually-hidden">
+                Открыть меню
+              </span>
+            </button>
+          </div>
+          <ul class="main-header__list main-nav__products products-menu list-reset outline-3">
+            <li class="main-nav__item products-menu__item products-menu__catalog">
+              <a class="main-nav__link products-menu__link link-reset" href="catalog.html">
+                <div class="main-nav__wrapper">
+                  Каталог товаров
+                </div>
               </a>
             </li>
-            <li class="page__menu-item main-nav__item">
-              <a class="main-nav__link link-reset" href="search.html">
-                <svg class="main-nav__icon main-nav__icon--search" width="17.6" height="17.6">
-                  <use xlink:href='#search' />
-                </svg>
-                Поиск по сайту
+            <li class="main-nav__item products-menu__item products-menu__form">
+              <a class="main-nav__link products-menu__link link-reset" href="form.html">
+                <div class="main-nav__wrapper">
+                  Вязание на заказ
+                </div>
               </a>
             </li>
-            <li class="page__menu-item main-nav__item">
-              <a class="main-nav__link link-reset" href="cart.html">
-                <svg class="main-nav__icon main-nav__icon--cart" width="20.294" height="18.849">
-                  <use xlink:href='#cart' />
-                </svg>
-                Корзина: пока пуста
+          </ul>
+          <ul class="main-header__list main-nav__user-menu user-menu list-reset outline-3">
+            <li class="main-nav__item user-menu__item user-menu__search">
+              <a class="main-nav__link main-nav__link--no-text user-menu__link link-reset" href="search.html">
+                <div class="main-nav__wrapper">
+                  <svg class="main-nav__icon" width="17.6" height="17.6">
+                    <use xlink:href='#search' />
+                  </svg>
+                  Поиск по сайту
+                </div>
+              </a>
+            </li>
+            <li class="main-nav__item user-menu__item user-menu__cart">
+              <a class="main-nav__link user-menu__link link-reset" href="cart.html">
+                <div class="main-nav__wrapper">
+                  <svg class="main-nav__icon" width="20.294" height="19">
+                    <use xlink:href='#cart' />
+                  </svg>
+                  Корзина: пока пуста
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-header__list main-nav__offers offers-menu list-reset outline-3">
+            <li class="main-nav__item main-nav__item--lg offers-menu__item">
+              <a class="main-nav__link offers-menu__link link-reset" href="newcomes.html">
+                Новые поступления
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--lg offers-menu__item">
+              <a class="main-nav__link offers-menu__link link-reset" href="sales.html">
+                Распродажа
+              </a>
+            </li>
+            <li class="main-nav__item offers-menu__item">
+              <a class="main-nav__link main-nav__link--pale offers-menu__link link-reset" href="delivery.html">
+                Бесплатная доставка по России
               </a>
             </li>
           </ul>
@@ -51,19 +80,19 @@
       </div>
     </header>
     <main class="page__main main">
-      <header class="main__header main__header--index main__header--background">
+      <header class="main__header main__header--index">
         <div class="page__container">
           <h1 class="visually-hidden">Магазин вязаных вещей "Мишка".</h1>
           <div class="main__title main__title--index">
             Милые штуки ручной работы&nbsp;для&nbsp;дома
           </div>
           <ul class="main__nav categories-menu list-reset">
-            <li class="page__menu-item categories-menu__item categories-menu__item--interior icon icon--interior">
+            <li class="categories-menu__item categories-menu__item--interior icon icon--interior">
               <a class="categories-menu__link link-reset" href="#">
                 Предметы интерьера
               </a>
             </li>
-            <li class="page__menu-item categories-menu__item categories-menu__item--toys icon icon--toy">
+            <li class="categories-menu__item categories-menu__item--toys icon icon--toy">
               <a class="categories-menu__link link-reset" href="#">
                 Детские игрушки
               </a>
@@ -71,64 +100,74 @@
           </ul>
         </div>
       </header>
-      <article class="weekly-top-product decor-wave">
+      <article class="weekly-top-product decor-wave  outline-1">
         <div class="page__container">
-          <h1 class="weekly-top-product__title">Вязаные корзинки</h1>
-          <div class="weekly-top-product__label">Товар недели</div>
-          <p class="weekly-top-product__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="weekly-top-product__properties properties-table">
-            <tr class="properties-table__row">
-              <td class="properties-table__cell properties-table__cell--title">Цвет:</td>
-              <td class="properties-table__cell properties-table__cell--value">«Тиффани»/серый</td>
-            </tr>
-            <tr class="properties-table__row">
-              <td class="properties-table__cell properties-table__cell--title">Диаметр:</td>
-              <td class="properties-table__cell properties-table__cell--value">25 см</td>
-            </tr>
-            <tr class="properties-table__row">
-              <td class="properties-table__cell properties-table__cell--title">Высота:</td>
-              <td class="properties-table__cell properties-table__cell--value">15 см</td>
-            </tr>
-          </table>
-          <div class="weekly-top-product__img">
-            <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+          <div class="weekly-top-product__title-wrapper">
+            <h1 class="weekly-top-product__title">Вязаные корзинки</h1>
+            <div class="weekly-top-product__label">Товар недели</div>
           </div>
-          <div class="weekly-top-product__price weekly-top-product__price--layout">
-            Цена: 990 руб.
+          <div class="weekly-top-product__content">
+            <div class="weekly-top-product__properties-wrapper">
+              <div class="weekly-top-product__info-block">
+                <p class="weekly-top-product__description">
+                  Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+                </p>
+                <table class="weekly-top-product__properties properties-table">
+                  <tr class="properties-table__row">
+                    <td class="properties-table__cell properties-table__cell--title">Цвет:</td>
+                    <td class="properties-table__cell properties-table__cell--value">«Тиффани»/серый</td>
+                  </tr>
+                  <tr class="properties-table__row">
+                    <td class="properties-table__cell properties-table__cell--title">Диаметр:</td>
+                    <td class="properties-table__cell properties-table__cell--value">25 см</td>
+                  </tr>
+                  <tr class="properties-table__row">
+                    <td class="properties-table__cell properties-table__cell--title">Высота:</td>
+                    <td class="properties-table__cell properties-table__cell--value">15 см</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="weekly-top-product__sell-block">
+                <div class="weekly-top-product__price">
+                  Цена: 990 руб.
+                </div>
+                <button class="weekly-top-product__button button" type="button">
+                  Заказать
+                </button>
+              </div>
+            </div>
+            <div class="weekly-top-product__img-wrapper">
+              <img class="weekly-top-product__img" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+            </div>
           </div>
-          <button class="weekly-top-product__button button" type="button">
-            Заказать
-          </button>
         </div>
       </article>
-      <section class="features">
-        <div class="page__container">
+      <div class="page__container">
+        <section class="features  outline-1">
           <h2 class="features__title">Коротко о нас:</h2>
-          <ul class="features__list list-reset">
+          <ul class="features__list list-reset outline-3">
             <li class="features__item features__item--eco icon icon--flower">
               Экологически чистые&nbsp;материалы
-            </li>
-            <li class="features__item features__item--style icon icon--dollar">
-              Скандинавский стиль по&nbsp;российской&nbsp;цене
-            </li>
-            <li class="features__item features__item--likes icon icon--heart">
-              Увеличивает лайки на&nbsp;фотографиях
             </li>
             <li class="features__item features__item--handmade icon icon--clew">
               Связано вручную с любовью&nbsp;и&nbsp;умилением
             </li>
+            <li class="features__item features__item--style icon icon--dollar">
+              Скандинавский стиль по&nbsp;российской&nbsp;цене
+            </li>
             <li class="features__item features__item--domestic icon icon--rocket">
               Поддержка отечественного производителя
+            </li>
+            <li class="features__item features__item--likes icon icon--heart">
+              Увеличивает лайки на&nbsp;фотографиях
             </li>
             <li class="features__item features__item--package icon icon--present">
               Поставляется в  подарочной&nbsp;упаковке
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="reviews slider decor-wave">
+        </section>
+      </div>
+      <section class="reviews slider decor-wave  outline-1">
         <div class="page__container">
           <h2 class="reviews__title">Отзывы</h2>
           <input class="visually-hidden slider__input-1" type="radio" id="btn-1" name="toggle" checked>
@@ -192,7 +231,7 @@
           <button class="reviews__btn button" type="button">Написать</button>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts  outline-1">
         <div class="page__container">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__info">
@@ -214,7 +253,7 @@
         </div>
       </section>
     </main>
-    <footer class="page__footer main-footer">
+    <footer class="page__footer main-footer  outline-1">
       <div class="page__container">
         <ul class="main-footer__socials socials list-reset">
           <li class="socials__link">

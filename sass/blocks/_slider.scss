@@ -1,0 +1,65 @@
+.slider__slide {
+  display: none;
+}
+
+.slider__container {
+  position: relative;
+  padding-bottom: 82px;
+  margin-bottom: 40px;
+}
+
+.slider__link {
+  width: 130px;
+  height: 50px;
+  border: 1px solid #ececec;
+
+  &--back {
+    .slider__control {
+      left: 0;
+      background-image: url("../img/icon-left-arrow.svg");
+    }
+  }
+
+  &--forward {
+    .slider__control {
+      right: 0;
+      background-image: url("../img/icon-right-arrow.svg");
+    }
+  }
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider__control {
+  position: absolute;
+  visibility: hidden;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.slider__input-1:checked ~ .slider__container .slider__slide--1,
+.slider__input-2:checked ~ .slider__container .slider__slide--2,
+.slider__input-3:checked ~ .slider__container .slider__slide--3 {
+  display: block;
+}
+
+.slider__input-1:checked ~ .slider__container .slider__control--1,
+.slider__input-2:checked ~ .slider__container .slider__control--2,
+.slider__input-3:checked ~ .slider__container .slider__control--3 {
+  visibility: visible;
+}

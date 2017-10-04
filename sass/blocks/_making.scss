@@ -1,0 +1,64 @@
+.making {
+  margin-bottom: 58px;
+  padding-bottom: 47px;
+  border: 1px solid #ececec;
+}
+
+.making__title {
+  margin-top: 24px;
+  margin-bottom: 23px;
+  padding-left: 90px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.making__wrapper {
+  position: relative;
+}
+
+.making__video {
+  margin: 0 -1px;
+}
+
+.making__start-link {
+  position: absolute;
+  top: 37px;
+  left: 79px;
+  display: block;
+  width: 100px;
+  height: 76px;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  font-size: 0;
+  transition: 0.1s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.making__description {
+  padding-top: 10px;
+  padding-bottom: 29px;
+  padding-right: 40px;
+  padding-left: 33px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $text-color;
+}
+
+.making__order-btn {
+  margin-left: 33px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-right: 23px;
+  padding-left: 24px;
+  font-size: 17px;
+  line-height: 16px;
+}

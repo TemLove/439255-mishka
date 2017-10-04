@@ -1,0 +1,140 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $screen-md) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.main-nav__item {
+  margin-bottom: -1px;
+  line-height: 24px;
+  font-weight: 700;
+  box-shadow: inset 0px 1px 0 0 rgba(236, 236, 236, 1), inset 0px -1px 0 0 rgba(236, 236, 236, 1);
+
+  @media (min-width: $screen-md) {
+    box-shadow: none;
+  }
+
+  &--lg {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+    }
+  }
+}
+
+.main-nav__logo {
+  order: 1;
+
+  @media (min-width: $screen-md) {
+    order: 1;
+    width: 47.904%;
+  }
+
+  @media (min-width: $screen-lg) {
+    order: 2;
+    width: 24.66%;
+    text-align: left;
+  }
+}
+
+.main-nav__products {
+  order: 2;
+
+  @media (min-width: $screen-md) {
+    order: 3;
+    width: 50%;
+  }
+
+  @media (min-width: $screen-lg) {
+    order: 1;
+    width: 42%;
+  }
+}
+
+.main-nav__user-menu {
+  order: 3;
+
+  @media (min-width: $screen-md) {
+    order: 2;
+    width: 52.096%;
+  }
+
+  @media (min-width: $screen-lg) {
+    order: 3;
+    width: 33.34%;
+  }
+}
+
+.main-nav__offers {
+  display: none;
+  order: 4;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    width: 40%;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 100%;
+  }
+}
+
+.main-nav__link {
+  display: inline-block;
+  width: 100%;
+  padding: 28px 0;
+
+  @media (min-width: $screen-md) {
+    padding: 30px 0;
+  }
+
+  &--logo {
+    padding: 22px 0;
+  }
+
+  &--no-text {
+    @media (min-width: $screen-md) {
+      width: 83px;
+      padding-left: 33px;
+      font-size: 0;
+    }
+  }
+
+  &--pale {
+    font-weight: 400;
+    color: $text-color;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+
+  &--no-js {
+    visibility: hidden;
+  }
+}
+
+.main-nav__icon {
+  position: absolute;
+  left: 0;
+
+  @media (min-width: $screen-md) {
+    position: static;
+    margin-right: 25px;
+  }
+}

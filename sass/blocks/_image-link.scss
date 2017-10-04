@@ -1,0 +1,13 @@
+.image-link {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.image-link__img {
+  display: block;
+
+  &--inline {
+    display: inline-block;
+    vertical-align: top;
+  }
+}

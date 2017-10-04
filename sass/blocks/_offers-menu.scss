@@ -1,0 +1,29 @@
+.offers-menu {
+  @media (min-width: $screen-md) {
+    position: absolute;
+    top: 100%;
+    right: -30px;
+    width: calc(40% + 60px);
+    font-size: 15px;
+  }
+
+  @media (min-width: $screen-lg) {
+    top: 100%;
+    left: -30px;
+    width: calc(100% + 60px);
+  }
+}
+
+.offers-menu__item {
+  margin-right: 30px;
+  margin-left: 30px;
+
+  &:last-child {
+    margin-left: auto;
+  }
+}
+
+.offers-menu__link {
+  padding: 0;
+  padding-top: 16px;
+}
