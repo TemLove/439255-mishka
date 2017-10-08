@@ -55,7 +55,9 @@
   border: none;
 
   &--dark {
-    background-color: rgba(241, 241, 241, 1);
+    @media (min-width: $screen-md) {
+      background-color: rgba(241, 241, 241, 1);
+    }
   }
 
   &--type {
