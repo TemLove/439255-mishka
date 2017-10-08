@@ -10,5 +10,9 @@
     height: 7px;
     background-image: url("../img/zigzag-line.png");
     background-repeat: repeat-x;
+
+    @media (min-width: $screen-md) {
+      background: none;
+    }
   }
 }

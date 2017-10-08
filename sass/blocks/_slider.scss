@@ -4,14 +4,24 @@
 
 .slider__container {
   position: relative;
-  padding-bottom: 82px;
   margin-bottom: 40px;
+  padding-bottom: 80px;
+
+  @media (min-width: $screen-md) {
+    padding-bottom: 0;
+  }
 }
 
 .slider__link {
   width: 130px;
   height: 50px;
   border: 1px solid #ececec;
+
+  @media (min-width: $screen-md) {
+    width: 87px;
+    height: 60px;
+    border: none;
+  }
 
   &--back {
     .slider__control {
@@ -33,6 +43,10 @@
   bottom: 0;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $screen-md) {
+    right: 0;
+  }
 }
 
 .slider__control {

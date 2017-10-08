@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page page--form">
-    <header class="page__header main-header outline-1">
-      <div class="page__container">
+    <header class="page__header main-header">
+      <div class="page__container page__container--menu">
         <nav class="main-header__nav main-nav">
-          <div class="main-header__logo main-nav__logo outline-3">
+          <div class="main-header__logo main-nav__logo">
             <a class="main-nav__link main-nav__link--logo image-link" href="index.html">
               <img class="image-link__img image-link__img--inline" src="img/logo-mobile.svg" alt='Магазин вязаных вещей "Мишка".' width="86" height="36">
             </a>
@@ -21,7 +21,7 @@
               </span>
             </button>
           </div>
-          <ul class="main-header__list main-nav__products products-menu list-reset outline-3">
+          <ul class="main-header__list main-nav__products products-menu list-reset">
             <li class="main-nav__item products-menu__item products-menu__catalog">
               <a class="main-nav__link products-menu__link link-reset" href="catalog.html">
                 <div class="main-nav__wrapper">
@@ -37,7 +37,7 @@
               </a>
             </li>
           </ul>
-          <ul class="main-header__list main-nav__user-menu user-menu list-reset outline-3">
+          <ul class="main-header__list main-nav__user-menu user-menu list-reset">
             <li class="main-nav__item user-menu__item user-menu__search">
               <a class="main-nav__link main-nav__link--no-text user-menu__link link-reset" href="search.html">
                 <div class="main-nav__wrapper">
@@ -59,7 +59,7 @@
               </a>
             </li>
           </ul>
-          <ul class="main-header__list main-nav__offers offers-menu list-reset outline-3">
+          <ul class="main-header__list main-nav__offers offers-menu list-reset">
             <li class="main-nav__item main-nav__item--lg offers-menu__item">
               <a class="main-nav__link offers-menu__link link-reset" href="newcomes.html">
                 Новые поступления
@@ -80,94 +80,122 @@
       </div>
     </header>
     <main class="page__main main">
-      <header class="main__header  outline-1">
+      <header class="main__header">
         <div class="page__container">
           <h1 class="main__title main__title--inner">Вязание на заказ</h1>
         </div>
       </header>
-      <form class="ordering-form outline-1" method="get" action="https://echo.htmlacademy.ru">
+      <form class="ordering-form" method="get" action="https://echo.htmlacademy.ru">
         <div class="page__container">
           <div class="ordering-form__text">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </div>
-          <fieldset class="ordering-form__group ordering-form__group--type">
+        </div>
+        <fieldset class="ordering-form__group ordering-form__group--type">
+          <div class="page__container ordering-form__wrapper">
             <legend class="ordering-form__title ordering-form__title--type">
               Тип
             </legend>
-            <input class="ordering-form__input ordering-form__input--radio visually-hidden" type="radio" name="type" id="type-interior" value="interior" checked>
-            <label class="ordering-form__label ordering-form__label--radio" for="type-interior">
-              Аксессуар для интерьера
-            </label>
-            <input class="ordering-form__input ordering-form__input--radio visually-hidden" type="radio" name="type" id="type-toy" value="toy">
-            <label class="ordering-form__label ordering-form__label--radio" for="type-toy">
-              Детская игрушка
-            </label>
-          </fieldset>
-          <fieldset class="ordering-form__group ordering-form__group--color">
+            <div class="ordering-form__input-field ordering-form__type-filter">
+              <input class="ordering-form__input ordering-form__input--radio visually-hidden" type="radio" name="type" id="type-interior" value="interior" checked>
+              <label class="ordering-form__label ordering-form__label--radio" for="type-interior">
+                Аксессуар для интерьера
+              </label>
+              <input class="ordering-form__input ordering-form__input--radio visually-hidden" type="radio" name="type" id="type-toy" value="toy">
+              <label class="ordering-form__label ordering-form__label--radio" for="type-toy">
+                Детская игрушка
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="ordering-form__group ordering-form__group--dark ordering-form__group--color">
+          <div class="page__container ordering-form__wrapper">
             <legend class="ordering-form__title ordering-form__title--color">
               Цвет
             </legend>
-            <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="white" id="color-white" checked>
-            <label class="ordering-form__label ordering-form__label--checkbox" for="color-white">
-              Белый
-            </label>
-            <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="gray" id="color-gray" checked>
-            <label class="ordering-form__label ordering-form__label--checkbox" for="color-gray">
-              Серый
-            </label>
-            <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="tiffany" id="color-tiffany">
-            <label class="ordering-form__label ordering-form__label--checkbox" for="color-tiffany">
-              «Тиффани»
-            </label>
-            <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="black" id="color-black">
-            <label class="ordering-form__label ordering-form__label--checkbox" for="color-black">
-              Черный
-            </label>
-            <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="pink" id="color-pink">
-            <label class="ordering-form__label ordering-form__label--checkbox" for="color-pink">
-              Розовый
-            </label>
-            <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="orange" id="color-orange">
-            <label class="ordering-form__label ordering-form__label--checkbox" for="color-orange">
-              Оранжевый
-            </label>
-          </fieldset>
-          <fieldset class="ordering-form__group ordering-form__group--user-info">
+            <div class="ordering-form__input-field ordering-form__color-filter">
+              <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="white" id="color-white" checked>
+              <label class="ordering-form__label ordering-form__label--checkbox" for="color-white">
+                Белый
+              </label>
+              <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="gray" id="color-gray" checked>
+              <label class="ordering-form__label ordering-form__label--checkbox" for="color-gray">
+                Серый
+              </label>
+              <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="tiffany" id="color-tiffany">
+              <label class="ordering-form__label ordering-form__label--checkbox" for="color-tiffany">
+                «Тиффани»
+              </label>
+              <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="black" id="color-black">
+              <label class="ordering-form__label ordering-form__label--checkbox" for="color-black">
+                Черный
+              </label>
+              <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="pink" id="color-pink">
+              <label class="ordering-form__label ordering-form__label--checkbox" for="color-pink">
+                Розовый
+              </label>
+              <input class="ordering-form__input ordering-form__input--checkbox visually-hidden" type="checkbox" name="orange" id="color-orange">
+              <label class="ordering-form__label ordering-form__label--checkbox" for="color-orange">
+                Оранжевый
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="ordering-form__group ordering-form__group--user-info">
+          <div class="page__container ordering-form__wrapper">
             <legend class="ordering-form__title ordering-form__title--user-info">
               ФИО
             </legend>
-            <label class="ordering-form__label ordering-form__label--text" for="user-name">
-              Имя:
-            </label>
-            <input class="ordering-form__input ordering-form__input--text" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя*" required>
-            <label class="ordering-form__label ordering-form__label--text" for="user-surname">
-              Фамилия:
-            </label>
-            <input class="ordering-form__input ordering-form__input--text" type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию*" required>
-            <label class="ordering-form__label ordering-form__label--text" for="user-patronymic">
-              Отчество:
-            </label>
-            <input class="ordering-form__input ordering-form__input--text" type="text" name="user-patronymic" id="user-patronymic" placeholder="Отчество, если желаете">
-          </fieldset>
-          <fieldset class="ordering-form__group ordering-form__group--phone">
+            <div class="ordering-form__user-block">
+              <div class="ordering-form__input-field ordering-form__user-name">
+                <label class="ordering-form__label ordering-form__label--text" for="user-name">
+                  Имя:
+                </label>
+                <input class="ordering-form__input ordering-form__input--text" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="ordering-form__input-field ordering-form__user-name">
+                <label class="ordering-form__label ordering-form__label--text" for="user-surname">
+                  Фамилия:
+                </label>
+                <input class="ordering-form__input ordering-form__input--text" type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="ordering-form__input-field ordering-form__user-name">
+                <label class="ordering-form__label ordering-form__label--text" for="user-patronymic">
+                  Отчество:
+                </label>
+                <input class="ordering-form__input ordering-form__input--text" type="text" name="user-patronymic" id="user-patronymic" placeholder="Отчество, если желаете">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="ordering-form__group ordering-form__group--dark ordering-form__group--phone">
+          <div class="page__container ordering-form__wrapper">
             <legend class="ordering-form__title ordering-form__title--phone">
               Тел
             </legend>
-            <label class="visually-hidden" for="user-phone">
-              Ваш телефон
-            </label>
-            <input class="ordering-form__input ordering-form__input--tel icon icon--phone" type="tel" name="user-phone" id="user-phone" placeholder="+7 XXX XX XX*" pattern="^(\+7\s\d\d\d\s\d\d\s\d\d)$" required>
-          </fieldset>
-          <fieldset class="ordering-form__group ordering-form__group--email">
+            <div class="ordering-form__input-field ordering-form__phone-block">
+              <label class="visually-hidden" for="user-phone">
+                Ваш телефон
+              </label>
+              <input class="ordering-form__input ordering-form__input--tel icon icon--phone" type="tel" name="user-phone" id="user-phone" placeholder="+7 XXX XX XX*" pattern="^(\+7\s\d\d\d\s\d\d\s\d\d)$" required>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="ordering-form__group ordering-form__group--dark ordering-form__group--email">
+          <div class="page__container ordering-form__wrapper">
             <legend class="ordering-form__title ordering-form__title--email">
               E-mail
             </legend>
-            <label class="visually-hidden" for="user-email">
-              Ваш e-mail
-            </label>
-            <input class="ordering-form__input ordering-form__input--email icon icon--mail" type="email" name="user-email" id="user-email" placeholder="Ваш Email*" required>
-          </fieldset>
-          <fieldset class="ordering-form__group ordering-form__group--user-wishes">
+            <div class="ordering-form__input-field ordering-form__email-block">
+              <label class="visually-hidden" for="user-email">
+                Ваш e-mail
+              </label>
+              <input class="ordering-form__input ordering-form__input--email icon icon--mail" type="email" name="user-email" id="user-email" placeholder="Ваш Email*" required>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="ordering-form__group ordering-form__group--user-wishes">
+          <div class="page__container ordering-form__wrapper">
             <legend class="ordering-form__title ordering-form__title--user-wishes">
               Доп
             </legend>
@@ -175,16 +203,25 @@
               Дополнительная информация
             </label>
             <textarea class="ordering-form__input ordering-form__input--textarea" name="user-wishes" id="user-wishes" placeholder="Опишите все ваши пожелания&nbsp;к&nbsp;заказу" cols="30" rows="6"></textarea>
-          </fieldset>
-          <p class="ordering-form__comment">*Поля обязательны для заполнения</p>
-          <button class="ordering-form__button button" type="submit">
-            Отправить заказ
-          </button>
+          </div>
+        </fieldset>
+        <div class="page__container">
+          <div class="ordering-form__submit-block">
+            <p class="ordering-form__comment">*Поля обязательны для заполнения</p>
+            <button class="ordering-form__button button" type="submit">
+              Отправить заказ
+            </button>
+          </div>
         </div>
       </form>
     </main>
-    <footer class="page__footer main-footer outline-1">
-      <div class="page__container">
+    <footer class="page__footer main-footer">
+      <div class="page__container main-footer__wrapper">
+        <div class="main-footer__logo">
+          <a class="image-link" href="index.html">
+            <img class="image-link__img" src="http://place-hold.it/102x34" alt='Магазин вязаных вещей "Мишка".' width="102" height="34">
+          </a>
+        </div>
         <ul class="main-footer__socials socials list-reset">
           <li class="socials__link">
             <a class="socials__instagram" href="#">
@@ -212,7 +249,9 @@
           </li>
         </ul>
         <div class="main-footer__credits credits">
-          Разработано
+          <span class="credits__text">
+            Разработано
+          </span>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="credits__link">
             <svg class="icon icon--html" width="26.943" height="34.09">
               <use xlink:href='#html' />

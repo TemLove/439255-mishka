@@ -11,7 +11,7 @@
     <header class="page__header main-header">
       <div class="page__container page__container--menu">
         <nav class="main-header__nav main-nav">
-          <div class="main-header__logo main-nav__logo outline-3">
+          <div class="main-header__logo main-nav__logo">
             <a class="main-nav__link main-nav__link--logo image-link">
               <img class="image-link__img image-link__img--inline" src="img/logo-mobile.svg" alt='Магазин вязаных вещей "Мишка".' width="86" height="36">
             </a>
@@ -21,7 +21,7 @@
               </span>
             </button>
           </div>
-          <ul class="main-header__list main-nav__products products-menu list-reset outline-3">
+          <ul class="main-header__list main-nav__products products-menu list-reset">
             <li class="main-nav__item products-menu__item products-menu__catalog">
               <a class="main-nav__link products-menu__link link-reset" href="catalog.html">
                 <div class="main-nav__wrapper">
@@ -37,7 +37,7 @@
               </a>
             </li>
           </ul>
-          <ul class="main-header__list main-nav__user-menu user-menu list-reset outline-3">
+          <ul class="main-header__list main-nav__user-menu user-menu list-reset">
             <li class="main-nav__item user-menu__item user-menu__search">
               <a class="main-nav__link main-nav__link--no-text user-menu__link link-reset" href="search.html">
                 <div class="main-nav__wrapper">
@@ -59,7 +59,7 @@
               </a>
             </li>
           </ul>
-          <ul class="main-header__list main-nav__offers offers-menu list-reset outline-3">
+          <ul class="main-header__list main-nav__offers offers-menu list-reset">
             <li class="main-nav__item main-nav__item--lg offers-menu__item">
               <a class="main-nav__link offers-menu__link link-reset" href="newcomes.html">
                 Новые поступления
@@ -100,7 +100,7 @@
           </ul>
         </div>
       </header>
-      <article class="weekly-top-product decor-wave  outline-1">
+      <article class="weekly-top-product decor-wave">
         <div class="page__container">
           <div class="weekly-top-product__title-wrapper">
             <h1 class="weekly-top-product__title">Вязаные корзинки</h1>
@@ -143,9 +143,9 @@
         </div>
       </article>
       <div class="page__container">
-        <section class="features  outline-1">
+        <section class="features">
           <h2 class="features__title">Коротко о нас:</h2>
-          <ul class="features__list list-reset outline-3">
+          <ul class="features__list list-reset">
             <li class="features__item features__item--eco icon icon--flower">
               Экологически чистые&nbsp;материалы
             </li>
@@ -167,8 +167,8 @@
           </ul>
         </section>
       </div>
-      <section class="reviews slider decor-wave  outline-1">
-        <div class="page__container">
+      <section class="reviews slider decor-wave">
+        <div class="page__container reviews__container">
           <h2 class="reviews__title">Отзывы</h2>
           <input class="visually-hidden slider__input-1" type="radio" id="btn-1" name="toggle" checked>
           <input class="visually-hidden slider__input-2" type="radio" id="btn-2" name="toggle">
@@ -231,30 +231,37 @@
           <button class="reviews__btn button" type="button">Написать</button>
         </div>
       </section>
-      <section class="contacts  outline-1">
-        <div class="page__container">
+      <section class="contacts">
+        <div class="contacts__container">
           <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__info">
-            <span class="contacts__label">e-mail:</span>
-            <a class="contacts__value link-reset" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <div class="contacts__info-wrapper">
+            <div class="contacts__info">
+              <span class="contacts__label">e-mail:</span>
+              <a class="contacts__value link-reset" href="mailto:info@mimimishkashop.ru"><span class="contacts__email">info@mimimishkashop.ru</span></a>
+            </div>
+            <div class="contacts__info">
+              <span class="contacts__label">адрес:</span>
+              <address class="contacts__value">
+                г.&nbsp;Санкт-Петербург,
+                ул.&nbsp;Большая Конюшенная,
+                д.&nbsp;19/8,&nbsp;офис&nbsp;101
+              </address>
+            </div>
           </div>
-          <div class="contacts__info">
-            <span class="contacts__label">адрес:</span>
-            <address class="contacts__value">
-              г.&nbsp;Санкт-Петербург,
-              ул.&nbsp;Большая Конюшенная,
-              д.&nbsp;19/8,&nbsp;офис&nbsp;101
-            </address>
-          </div>
-          <a class="contacts__map image-link" href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387969,30.3208946,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833?hl=ru" target="_blank">
-            <img class="image-link__img" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
-          </a>
-          <button class="contacts__btn button">Напишите нам</button>
         </div>
+        <a class="contacts__map image-link" href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387969,30.3208946,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833?hl=ru" target="_blank">
+          <img class="image-link__img image-link__img--inline" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
+        </a>
+        <button class="contacts__btn button">Напишите нам</button>
       </section>
     </main>
-    <footer class="page__footer main-footer  outline-1">
-      <div class="page__container">
+    <footer class="page__footer main-footer">
+      <div class="page__container main-footer__wrapper">
+        <div class="main-footer__logo">
+          <a class="image-link">
+            <img class="image-link__img" src="http://place-hold.it/102x34" alt='Магазин вязаных вещей "Мишка".' width="102" height="34">
+          </a>
+        </div>
         <ul class="main-footer__socials socials list-reset">
           <li class="socials__link">
             <a class="socials__instagram" href="#">

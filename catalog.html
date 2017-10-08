@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page catalog-page">
-    <header class="page__header main-header  outline-1">
-      <div class="page__container">
-                <nav class="main-header__nav main-nav">
-          <div class="main-header__logo main-nav__logo outline-3">
+    <header class="page__header main-header">
+      <div class="page__container page__container--menu">
+        <nav class="main-header__nav main-nav">
+          <div class="main-header__logo main-nav__logo">
             <a class="main-nav__link main-nav__link--logo image-link" href="index.html">
               <img class="image-link__img image-link__img--inline" src="img/logo-mobile.svg" alt='Магазин вязаных вещей "Мишка".' width="86" height="36">
             </a>
@@ -21,7 +21,7 @@
               </span>
             </button>
           </div>
-          <ul class="main-header__list main-nav__products products-menu list-reset outline-3">
+          <ul class="main-header__list main-nav__products products-menu list-reset">
             <li class="main-nav__item products-menu__item products-menu__catalog">
               <a class="main-nav__link products-menu__link link-reset" href="catalog.html">
                 <div class="main-nav__wrapper">
@@ -37,7 +37,7 @@
               </a>
             </li>
           </ul>
-          <ul class="main-header__list main-nav__user-menu user-menu list-reset outline-3">
+          <ul class="main-header__list main-nav__user-menu user-menu list-reset">
             <li class="main-nav__item user-menu__item user-menu__search">
               <a class="main-nav__link main-nav__link--no-text user-menu__link link-reset" href="search.html">
                 <div class="main-nav__wrapper">
@@ -59,7 +59,7 @@
               </a>
             </li>
           </ul>
-          <ul class="main-header__list main-nav__offers offers-menu list-reset outline-3">
+          <ul class="main-header__list main-nav__offers offers-menu list-reset">
             <li class="main-nav__item main-nav__item--lg offers-menu__item">
               <a class="main-nav__link offers-menu__link link-reset" href="newcomes.html">
                 Новые поступления
@@ -80,13 +80,13 @@
       </div>
     </header>
     <main class="page__main main">
-      <header class="main__header outline-1">
+      <header class="main__header">
         <div class="page__container">
           <h1 class="main__title main__title--inner">Каталог товаров</h1>
         </div>
       </header>
       <div class="page__container">
-        <ul class="products products__list list-reset  outline-1">
+        <ul class="products products__list list-reset">
           <li class="products__product product">
             <div class="product__image">
               <a class="image-link" href="#">
@@ -143,7 +143,7 @@
             </div>
             <div class="product__info">
               <h2 class="product__title">
-                <a class="link-reset" href="#">Большая корзинка для игрушек</a>
+                <a class="link-reset" href="#">Большая корзинка для&nbsp;игрушек</a>
               </h2>
               <p class="product__description">
                 Диаметр 30 см, высота 30 см
@@ -160,7 +160,7 @@
             </div>
           </li>
         </ul>
-        <section class="making  outline-1">
+        <section class="making">
           <h2 class="making__title making__icon icon icon--camera">
             Процесс производства
           </h2>
@@ -178,8 +178,13 @@
         </section>
       </div>
     </main>
-    <footer class="page__footer main-footer  outline-1">
-      <div class="page__container">
+    <footer class="page__footer main-footer">
+      <div class="page__container main-footer__wrapper">
+        <div class="main-footer__logo">
+          <a class="image-link" href="index.html">
+            <img class="image-link__img" src="http://place-hold.it/102x34" alt='Магазин вязаных вещей "Мишка".' width="102" height="34">
+          </a>
+        </div>
         <ul class="main-footer__socials socials list-reset">
           <li class="socials__link">
             <a class="socials__instagram" href="#">

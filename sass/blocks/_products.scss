@@ -4,8 +4,37 @@
   margin: 0 -15px;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media (min-width: $screen-md) {
+    display: block;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: flex;
+    margin: 0 -25.5px;
+    padding-top: 106px;
+    padding-bottom: 33px;
+  }
 }
 
 .products__product {
+  display: block;
   margin: 15px;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    margin-top: 54px;
+    margin-bottom: 54px;
+    margin-right: 0;
+    margin-left: 0;
+
+  }
+
+  @media (min-width: $screen-lg) {
+    flex-direction: column;
+    margin: 25.5px;
+  }
 }
