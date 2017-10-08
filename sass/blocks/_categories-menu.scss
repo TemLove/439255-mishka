@@ -16,7 +16,7 @@
 
 .categories-menu__item {
   flex-basis: 100%;
-//  min-height: 103px;
+  min-height: 103px;
 
   @media (min-width: $screen-md) {
     flex-basis: 50%;
