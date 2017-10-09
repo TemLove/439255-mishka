@@ -1,0 +1,79 @@
+.slider__slide {
+  display: none;
+}
+
+.slider__container {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 80px;
+
+  @media (min-width: $screen-md) {
+    padding-bottom: 0;
+  }
+}
+
+.slider__link {
+  width: 130px;
+  height: 50px;
+  border: 1px solid #ececec;
+
+  @media (min-width: $screen-md) {
+    width: 87px;
+    height: 60px;
+    border: none;
+  }
+
+  &--back {
+    .slider__control {
+      left: 0;
+      background-image: url("../img/icon-left-arrow.svg");
+    }
+  }
+
+  &--forward {
+    .slider__control {
+      right: 0;
+      background-image: url("../img/icon-right-arrow.svg");
+    }
+  }
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $screen-md) {
+    right: 0;
+  }
+}
+
+.slider__control {
+  position: absolute;
+  visibility: hidden;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.slider__input-1:checked ~ .slider__container .slider__slide--1,
+.slider__input-2:checked ~ .slider__container .slider__slide--2,
+.slider__input-3:checked ~ .slider__container .slider__slide--3 {
+  display: block;
+}
+
+.slider__input-1:checked ~ .slider__container .slider__control--1,
+.slider__input-2:checked ~ .slider__container .slider__control--2,
+.slider__input-3:checked ~ .slider__container .slider__control--3 {
+  visibility: visible;
+}

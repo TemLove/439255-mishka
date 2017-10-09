@@ -1,0 +1,35 @@
+.author {
+  display: flex;
+  flex-direction: column;
+}
+
+.author__name {
+  margin: 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @media (min-width: $screen-md) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: 17px;
+  }
+}
+
+.author__sign {
+  margin: 0;
+  margin-top: 3px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+
+  @media (min-width: $screen-md) {
+    margin-top: 5px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-top: 0;
+  }
+}

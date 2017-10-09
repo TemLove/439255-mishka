@@ -1,0 +1,30 @@
+.review {
+  margin-top: 25px;
+
+  @media (min-width: $screen-md) {
+    margin-top: 50px;
+  }
+}
+
+.review__content {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $text-color;
+
+  @media (min-width: $screen-md) {
+    font-size: 17px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 40px;
+    padding-right: 100px;
+  }
+}
+
+.review__author {
+  margin-top: 0;
+}

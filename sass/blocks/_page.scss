@@ -1,0 +1,41 @@
+.page {
+  min-width: 320px;
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+
+  @media (min-width: $screen-md) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $screen-lg) {
+    min-width: 1150px;
+  }
+}
+
+.page__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (max-width: $screen-md) {
+    &--menu {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 1150px;
+  }
+}
