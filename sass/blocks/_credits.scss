@@ -12,11 +12,11 @@
 }
 
 .credits__icon {
-    transform: translate(22px, 11px);
-    fill: $color;
+  transform: translate(22px, 11px);
+  fill: $color;
 
-    @media (min-width: $screen-md) {
-      margin-left: 25px;
-      transform: translate(0, 12px);
-    }
+  @media (min-width: $screen-md) {
+    margin-left: 25px;
+    transform: translate(0, 12px);
   }
+}

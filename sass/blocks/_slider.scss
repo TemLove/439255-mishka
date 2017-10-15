@@ -82,5 +82,10 @@
 .slider__input-2:focus ~ .slider__container .slider__control--2,
 .slider__input-3:focus ~ .slider__container .slider__control--3 {
   outline: thin dotted;
+}
+
+.slider__input-1:focus ~ .slider__container .slider__control--1,
+.slider__input-2:focus ~ .slider__container .slider__control--2,
+.slider__input-3:focus ~ .slider__container .slider__control--3 {
   outline: 5px auto -webkit-focus-ring-color;
 }

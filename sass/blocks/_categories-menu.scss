@@ -79,7 +79,7 @@
   }
 
   &:hover::before,
-  &:focus:before {
+  &:focus::before {
     opacity: 0.7;
   }
 

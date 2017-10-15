@@ -137,8 +137,7 @@
   display: block;
   margin: 0 auto 39px auto;
   width: 100%;
-  height: 457px;
-//  max-width: 322px;
+  height: 457px; //  max-width: 322px;
   text-align: center;
   background-color: #ebe5db;
 
@@ -146,8 +145,7 @@
     width: 100%;
   }
 
-  @media (min-width: $screen-md) {
-//    max-width: 768px;
+  @media (min-width: $screen-md) { //    max-width: 768px;
     margin-bottom: 55px;
   }
 

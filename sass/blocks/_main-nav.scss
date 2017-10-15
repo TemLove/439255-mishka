@@ -6,7 +6,7 @@
   }
 
   &--closed {
-    @media(max-width: $screen-sm-only) {
+    @media (max-width: $screen-sm-only) {
       ul {
         display: none;
       }
@@ -16,7 +16,7 @@
       content: "";
       position: absolute;
       top: 3px;
-      left: 0px;
+      left: 0;
       width: 20px;
       height: 2px;
       background-color: #000000;
@@ -30,7 +30,7 @@
   }
 
   &--opened {
-    @media(max-width: $screen-sm-only) {
+    @media (max-width: $screen-sm-only) {
       position: absolute;
       z-index: 1;
       width: 100%;
@@ -241,7 +241,7 @@
 .main-nav__icon {
   position: absolute;
   left: 30px;
-  fill: #231F20;
+  fill: #231f20;
   opacity: 0.2;
 
   @media (min-width: $screen-md) {

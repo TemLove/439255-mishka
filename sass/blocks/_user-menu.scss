@@ -4,14 +4,13 @@
 }
 
 .user-menu__item {
-//  outline: 1px solid yellow;
-  @media(min-width: $screen-md) {
+  @media (min-width: $screen-md) {
     box-shadow: inset 1px 0 0 0 rgba(236, 236, 236, 1);
   }
 }
 
 .user-menu__link {
-  @media(min-width: $screen-md) {
+  @media (min-width: $screen-md) {
     padding-left: 36px;
   }
 }

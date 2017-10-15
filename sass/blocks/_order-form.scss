@@ -69,6 +69,9 @@
 
 .order-form__input:focus + .order-form__label {
   outline: thin dotted;
+}
+
+.order-form__input:focus + .order-form__label {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
