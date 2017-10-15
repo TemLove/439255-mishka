@@ -5,9 +5,28 @@
   text-transform: uppercase;
   background: none;
 
+  &:hover,
+  &:focus {
+    background-color: $text-color;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--green {
     color: #ffffff;
     background-color: $color;
     border-color: $color;
+
+    &:hover,
+    &:focus {
+      background-color: $color;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }

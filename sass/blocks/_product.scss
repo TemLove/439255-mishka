@@ -38,6 +38,14 @@
   padding-left: 27px;
   border: 1px solid #ececec;
 
+  &:hover {
+    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.10);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.10);
+  }
+
   @media (min-width: $screen-md) {
     width: 50%;
     display: flex;
@@ -60,6 +68,14 @@
   padding-bottom: 4px;
   font-size: 17px;
   line-height: 24px;
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $screen-md) {
     padding-top: 25px;
@@ -114,4 +130,19 @@
 .product__button {
   padding: 0;
   border: none;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    opacity: 1;
+
+    svg {
+      fill: $color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

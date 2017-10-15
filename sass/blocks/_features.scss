@@ -1,6 +1,6 @@
 .features {
   margin-top: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
   @media (min-width: $screen-md) {
     margin-top: 48px;
@@ -19,6 +19,7 @@
 .features__title {
   font-size: 25px;
   line-height: 30px;
+  margin-bottom: 32px;
 
   @media (min-width: $screen-md) {
     margin-left: -5px;
@@ -44,11 +45,12 @@
 }
 
 .features__item {
-  flex-basis: 123px;
-  padding-top: 65px;
+  margin-bottom: 28px;
+  padding-top: 55px;
 
   @media (min-width: $screen-md) {
     flex-basis: 50%;
+    margin-bottom: 0;
     padding-top: 110px;
     font-size: 20px;
     line-height: 22px;

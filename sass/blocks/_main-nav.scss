@@ -1,5 +1,70 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: -56px;
+  }
+
+  &--closed {
+    @media(max-width: $screen-sm-only) {
+      ul {
+        display: none;
+      }
+    }
+
+    .main-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0px;
+      width: 20px;
+      height: 2px;
+      background-color: #000000;
+      box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+    }
+
+    .main-nav__toggle:active::before {
+      background-color: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.3), 0 12px 0 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &--opened {
+    @media(max-width: $screen-sm-only) {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      min-width: 320px;
+      background-color: #ffffff;
+    }
+
+    .main-nav__toggle {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: -2px;
+        width: 26px;
+        height: 2px;
+        background-color: #000000;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &:active::before,
+      &:active::after {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
 }
 
 .main-nav__wrapper {
@@ -96,6 +161,24 @@
   width: 100%;
   padding: 28px 0;
 
+  &[href]:hover {
+    color: rgba(0, 0, 0, 0.6);
+
+    .main-nav__icon {
+      opacity: 1;
+      fill: $color;
+    }
+  }
+
+  &[href]:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    .main-nav__icon {
+      fill: $color;
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $screen-md) {
     padding: 30px 0;
   }
@@ -104,10 +187,21 @@
     padding: 22px 0;
   }
 
+  &--logo[href] {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   &--no-text {
     @media (min-width: $screen-md) {
-      width: 83px;
-      padding-left: 33px;
+      width: 80px;
+      padding-top: 32px;
+      padding-bottom: 28px;
       font-size: 0;
     }
   }
@@ -115,12 +209,25 @@
   &--pale {
     font-weight: 400;
     color: $text-color;
+
+    &:hover {
+      color: rgba(68, 68, 68, 0.6);
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
 
 .main-nav__toggle {
   position: absolute;
-  right: 0;
+  top: 29px;
+  right: 31px;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
 
   @media (min-width: $screen-md) {
     display: none;
@@ -134,9 +241,15 @@
 .main-nav__icon {
   position: absolute;
   left: 30px;
+  fill: #231F20;
+  opacity: 0.2;
 
   @media (min-width: $screen-md) {
     position: static;
     margin-right: 25px;
+  }
+
+  @media (min-width: $screen-md) {
+    transform: translate(-4px, 3px);
   }
 }

@@ -69,14 +69,13 @@
 
 .weekly-top-product__content {
   position: relative;
-  padding-bottom: 127px;
 
   @media (min-width: $screen-md) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 56px;
-    padding-bottom: 0;
     width: 100%;
+    margin-top: 56px;
   }
 
   @media (min-width: $screen-lg) {
@@ -84,24 +83,25 @@
   }
 }
 
-.weekly-top-product__properties-wrapper {
-  display: flex;
-  flex-direction: column;
-
+.weekly-top-product__info-block {
   @media (min-width: $screen-md) {
     width: 292px;
+    padding-bottom: 127px;
   }
 
   @media (min-width: $screen-lg) {
-    margin-right: 58px;
-    margin-left: auto;
+    margin-right: auto;
+    margin-left: 175px;
     padding-top: 165px;
   }
 }
 
 .weekly-top-product__img-wrapper {
+  margin-bottom: 27px;
+
   @media (min-width: $screen-md) {
     width: 334px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $screen-lg) {
@@ -119,15 +119,14 @@
 }
 
 .weekly-top-product__sell-block {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-
   @media (min-width: $screen-md) {
-    position: static;
-    margin-top: auto;
+    margin-top: -110px;
+    margin-right: auto;
     width: 292px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-left: 175px;
   }
 }
 
@@ -147,7 +146,7 @@
   }
 
   @media (min-width: $screen-lg) {
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 }
 
