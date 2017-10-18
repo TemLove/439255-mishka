@@ -54,6 +54,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
     }
+
+    &::after {
+      bottom: -80px;
+    }
   }
 
   @media (min-width: $screen-lg) {
@@ -61,5 +65,10 @@
     padding-bottom: 53px;
     padding-left: 225px;
     background-position: 50px 0;
+
+    &::after {
+      left: 50px;
+      bottom: -95px;
+    }
   }
 }
