@@ -105,6 +105,7 @@
   @media (min-width: $screen-md) {
     order: 1;
     width: 47.904%;
+    text-align: left;
   }
 
   @media (min-width: $screen-lg) {
@@ -157,9 +158,10 @@
 }
 
 .main-nav__link {
-  display: inline-block;
+  display: block;
   width: 100%;
-  padding: 28px 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
 
   &[href]:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -180,11 +182,30 @@
   }
 
   @media (min-width: $screen-md) {
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 35px;
   }
 
   &--logo {
     padding: 22px 0;
+
+    @media (min-width: $screen-lg) {
+      padding-top: 10px;
+      padding-bottom: 5px;
+      padding-left: 9px;
+    }
+
+    img {
+      @media (min-width: $screen-md) {
+        width: 112px;
+        height: 46px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 149px;
+        height: 72px;
+      }
+    }
   }
 
   &--logo[href] {
@@ -201,7 +222,7 @@
     @media (min-width: $screen-md) {
       width: 80px;
       padding-top: 32px;
-      padding-bottom: 28px;
+      padding-bottom: 27px;
       font-size: 0;
     }
   }
