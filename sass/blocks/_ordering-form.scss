@@ -326,10 +326,10 @@
 
     &:focus + label::before {
       outline: thin dotted;
-    }
 
-    &:focus + label::before {
-      outline: 5px auto -webkit-focus-ring-color;
+      @media (min-width: $screen-sm) {
+        outline: 5px auto -webkit-focus-ring-color;
+      }
     }
   }
 
@@ -363,10 +363,10 @@
 
     &:focus + label::before {
       outline: thin dotted;
-    }
 
-    &:focus + label::before {
-      outline: 5px auto -webkit-focus-ring-color;
+      @media (min-width: $screen-sm) {
+        outline: 5px auto -webkit-focus-ring-color;
+      }
     }
   }
 
@@ -467,7 +467,7 @@
       padding-bottom: 17px;
       padding-left: 81px;
 
-      @media (max-width: $screen-lg) {
+      @media (max-width: $screen-md-only) {
         margin-right: auto;
 
         &:nth-of-type(2n) {

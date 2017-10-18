@@ -14,3 +14,9 @@
     padding-left: 36px;
   }
 }
+
+.user-menu__cart {
+  @media (min-width: $screen-md) {
+    width: 267px;
+  }
+}

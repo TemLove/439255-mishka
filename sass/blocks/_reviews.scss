@@ -49,6 +49,15 @@
     padding-bottom: 6px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 350px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
+
+    &::after {
+      bottom: -80px;
+    }
   }
 
   @media (min-width: $screen-lg) {
@@ -56,5 +65,10 @@
     padding-bottom: 53px;
     padding-left: 225px;
     background-position: 50px 0;
+
+    &::after {
+      left: 50px;
+      bottom: -95px;
+    }
   }
 }
