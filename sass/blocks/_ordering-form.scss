@@ -336,15 +336,15 @@
   &--radio {
     &:checked + label {
       &::before {
-        background: radial-gradient(circle, #62d1ba, #62d1ba 8px, #ffffff 8px, #ffffff 18px);
+        background-image: radial-gradient(circle, #62d1ba, #62d1ba 8px, #ffffff 8px, #ffffff 18px);
         background-repeat: no-repeat;
         background-size: 38px 38px;
         background-position: center;
 
         @media (min-width: $screen-md) {
-          background: radial-gradient(circle, #62d1ba, #62d1ba 10px, #ffffff 10px, #ffffff 25.5px);
           background-size: 51px 51px;
           background-position: center;
+          background-image: radial-gradient(circle, #62d1ba, #62d1ba 10px, #ffffff 10px, #ffffff 25.5px);
         }
       }
 

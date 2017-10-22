@@ -28,6 +28,7 @@
 }
 
 .reviews__btn {
+  display: inline-block;
   width: 100%;
 
   @media (min-width: $screen-md) {
