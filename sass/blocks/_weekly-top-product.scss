@@ -108,6 +108,7 @@
 
 .weekly-top-product__img {
   display: block;
+  background-color: rgb(241, 241, 241);
 
   @media (min-width: $screen-md) {
     width: 100%;
@@ -165,8 +166,10 @@
 }
 
 .weekly-top-product__button {
+  display: inline-block;
   width: 100%;
   margin-bottom: 41px;
+  text-align: center;
 
   @media (min-width: $screen-md) {
     margin-bottom: 70px;
