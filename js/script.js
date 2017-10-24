@@ -1,12 +1,10 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var contactsMap = document.querySelector('.contacts__map');
-var links = document.querySelectorAll(".modal__link");
 var popup = document.querySelector(".modal");
 var close = document.querySelector(".modal__close");
-if(popup) {
-  var formInput = popup.querySelector("input");
-}
+var linksSourse = [".weekly-top-product__modal-link", ".products__modal-link"];
+var links;
 
 navToggle.classList.remove('main-nav__toggle--no-js');
 navMain.classList.add('main-nav--closed');
@@ -21,21 +19,28 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-if(links) {
-  for(var i=0; i < links.length; i++) {
-    links[i].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal--show");
-      formInput.focus();
-    });
+if(popup) {
+  var formInput = popup.querySelector("input");
+
+  for(var i=0; i < linksSourse.length; i++) {
+    links = document.querySelectorAll(linksSourse[i]);
+
+    if(links) {
+
+      for(var j=0; j < links.length; j++) {
+        links[j].addEventListener("click", function (evt) {
+          evt.preventDefault();
+          popup.classList.add("modal--show");
+          formInput.focus();
+        })
+      }
+    }
   }
 
-  if(close) {
-    close.addEventListener("click", function (evt) {
+  close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal--show");
-    });
-  }
+  });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
