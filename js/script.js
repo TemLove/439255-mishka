@@ -67,7 +67,7 @@ function initMap() {
   };
   var map = new google.maps.Map(contactsMap, {
     zoom: 16,
-    center: mishka
+    center: {lat: 59.938841, lng: 30.322855}
   });
   var marker = new google.maps.Marker({
     position: mishka,

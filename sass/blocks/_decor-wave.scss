@@ -5,23 +5,27 @@
     content: "";
     display: block;
     position: absolute;
+    left: 0;
     bottom: 0;
-    width: calc(100% - 60px);
+    width: 320px;
     height: 7px;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: 260px 7px;
-    background-position: 0 0;
+    background-size: 320px 7px;
+    background-position: -7px 0;
     background-repeat: no-repeat;
 
     @media (min-width: $screen-md) {
-      width: 668px;
+      bottom: 2px;
+      width: 768px;
       height: 15px;
-      background-size: 768px 15px;
-      background-position: -30px 0;
+      background-size: 770px 16px;
+      background-position: -20px 0;
       background-repeat: repeat-x;
     }
 
     @media (min-width: $screen-lg) {
+      left: 50px;
+      bottom: 0;
       width: 1050px;
       height: 24px;
       background-size: 1050px 24px;

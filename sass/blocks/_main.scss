@@ -14,7 +14,7 @@
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-position: -36px 0;
-      background-size: auto 22px;
+      background-size: 768px 23px;
     }
   }
 
@@ -44,12 +44,14 @@
       background-size: 1150px auto;
       background-position: center top;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/hero-tablet@2x.jpg");
-      }
-
       &::before {
         bottom: -10px;
+        background-position: 0 0;
+        background-size: 768px 23px;
+      }
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
       }
     }
 
@@ -63,6 +65,8 @@
 
       &::before {
         bottom: -18px;
+        background-size: 1250px 37px;
+        background-position: -12px 0;
       }
     }
   }
