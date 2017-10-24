@@ -32,7 +32,12 @@
       background-image: url("../img/icon-feature-flower.svg");
 
       @media (min-width: $screen-md) {
-        top: 58px;
+        top: 56px;
+        left: 9px;
+      }
+
+      @media (min-width: $screen-lg) {
+        top: 55px;
         left: 9px;
       }
     }
@@ -47,8 +52,12 @@
       background-image: url("../img/icon-feature-ball.svg");
 
       @media (min-width: $screen-md) {
-        top: 60px;
+        top: 59px;
         left: 4px;
+      }
+
+      @media (min-width: $screen-lg) {
+        top: 58px;
       }
     }
   }
@@ -61,8 +70,12 @@
       background-image: url("../img/icon-feature-money.svg");
 
       @media (min-width: $screen-md) {
-        top: 60px;
+        top: 58px;
         left: 1px;
+      }
+
+      @media (min-width: $screen-lg) {
+        top: 57px;
       }
     }
   }
@@ -76,7 +89,11 @@
       background-image: url("../img/icon-feature-rocket.svg");
 
       @media (min-width: $screen-md) {
-        top: 62px;
+        top: 61px;
+      }
+
+      @media (min-width: $screen-lg) {
+        top: 60px;
       }
     }
   }
@@ -110,6 +127,10 @@
         top: 64px;
         left: 8px;
       }
+
+      @media (min-width: $screen-lg) {
+        top: 63px;
+      }
     }
   }
 
@@ -122,8 +143,12 @@
       background-image: url("../img/icon-feature-gift.svg");
 
       @media (min-width: $screen-md) {
-        top: 61px;
-        left: 4px;
+        top: 60px;
+        left: 3px;
+      }
+
+      @media (min-width: $screen-lg) {
+        top: 59px;
       }
     }
   }

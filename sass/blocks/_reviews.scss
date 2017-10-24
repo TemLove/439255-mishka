@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $screen-lg) {
-    margin-bottom: 165px;
+    margin-bottom: 161px;
   }
 }
 
@@ -63,13 +63,13 @@
 
   @media (min-width: $screen-lg) {
     padding-top: 70px;
-    padding-bottom: 53px;
+    padding-bottom: 56px;
     padding-left: 225px;
     background-position: 50px 0;
 
     &::after {
       left: 50px;
-      bottom: -95px;
+      bottom: -91px;
     }
   }
 }

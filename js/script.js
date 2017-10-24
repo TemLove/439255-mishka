@@ -55,7 +55,7 @@ if(contactsMap) {
 function initMap() {
   var mishka = {lat: 59.938631, lng: 30.323055};
   var image = {
-    url: "../img/icon-map-pin.svg",
+    url: "/img/icon-map-pin.svg",
     size: new google.maps.Size(66, 101),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(33, 101),
@@ -67,7 +67,7 @@ function initMap() {
   };
   var map = new google.maps.Map(contactsMap, {
     zoom: 16,
-    center: mishka
+    center: {lat: 59.938841, lng: 30.322855}
   });
   var marker = new google.maps.Marker({
     position: mishka,
